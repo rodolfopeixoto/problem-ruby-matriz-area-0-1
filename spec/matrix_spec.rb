@@ -24,27 +24,11 @@ describe Matrix do
       ]
     )
   end
-  it ".column" do
-    expect(@matrix.column).to eq(
-      [
-        [1,0,1,0,1,0],
-        [0,0,1,1,1,1],
-        [1,1,1,1,1,1],
-        [1,0,0,1,1,1],
-        [0,1,1,1,0,0],
-        [1,0,0,0,0,0],
-        [0,0,0,1,1,0]
-      ]
-    )
+  it ".row_size" do
+    expect(@matrix.row_size).to eq(6)
   end
-  describe 'Check line 1 and column 1' do
-    describe ".check_initial_matrix" do
-      it 'matrix valid' do
-        expect(@matrix.check_initial_matrix).to eq(1)
-      end
-      it 'matrix invalid' do
-        expect(@matrix_invalid.check_initial_matrix).to eq(0)
-      end
-    end
+
+  it '.column_size' do
+    expect(@matrix.column_size).to eq(7)
   end
 end

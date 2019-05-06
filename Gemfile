@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
-group :test do
-  gem 'rspec'
+gem 'rspec'
+gem 'pry'
+gem 'rubocop', require: false
+group :development do
+  gem 'byebug'
 end
